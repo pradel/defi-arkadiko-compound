@@ -24,7 +24,7 @@ export default function Home() {
   const { stxAddress } = useAccount();
   const { openContractCall } = useOpenContractCall();
 
-  const contractName = "outstanding-amber-zebra8";
+  const contractName = "arkadiko-compound-v1-1";
 
   /**
    * Get the current address stake amount in the pool
