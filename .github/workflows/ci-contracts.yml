@@ -1,0 +1,20 @@
+name: CI Contracts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    name: "Test contracts"
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Execute unit tests"
+        uses: docker://hirosystems/clarinet:latest
+        with:
+          args: test --coverage --manifest-path=./clarity/Clarinet.toml
