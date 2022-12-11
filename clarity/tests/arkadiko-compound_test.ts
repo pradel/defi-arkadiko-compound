@@ -18,7 +18,7 @@ Clarinet.test({
 
     let block = chain.mineBlock([
       Tx.contractCall(
-        "arkadiko-compound",
+        "arkadiko-compound-v1-1",
         "withdraw-ft",
         [
           types.principal(
@@ -31,6 +31,5 @@ Clarinet.test({
     ]);
 
     console.log(JSON.stringify(block, null, 2));
-    
   },
 });

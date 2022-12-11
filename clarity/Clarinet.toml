@@ -29,7 +29,7 @@ contract_id = 'SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.usda-token'
 [[project.requirements]]
 contract_id = 'SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-multi-hop-swap-v1-1'
 [contracts.arkadiko-compound]
-path = 'contracts/arkadiko-compound.clar'
+path = 'contracts/arkadiko-compound-v1-1.clar'
 clarity_version = 1
 [repl.analysis]
 passes = ['check_checker']
